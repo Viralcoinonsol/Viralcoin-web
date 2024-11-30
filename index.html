@@ -101,7 +101,23 @@
             color: #a8ffa8;
         }
         .lang-switch {
-            margin: 20px 0;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .lang-switch button {
+            font-size: 0.8em;
+            padding: 5px 10px;
+            margin: 2px;
+            background-color: #00ff00;
+            color: #004d00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .lang-switch button:hover {
+            background-color: #00cc00;
         }
     </style>
     <script>
@@ -119,6 +135,11 @@
 </head>
 <body onload="changeLanguage('en')">
 
+<div class="lang-switch">
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('es')">Español</button>
+</div>
+
 <header>
     <img src="logo.jpg" alt="Viral Coin Logo">
     <h1 data-lang="en">Viral Coin</h1>
@@ -128,11 +149,6 @@
     <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn cta-buy" data-lang="en">Buy Viral Coin Now!</a>
     <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn cta-buy" data-lang="es" style="display: none;">¡Compra Viral Coin Ahora!</a>
 </header>
-
-<div class="lang-switch">
-    <button class="btn" onclick="changeLanguage('en')">English</button>
-    <button class="btn" onclick="changeLanguage('es')">Español</button>
-</div>
 
 <section>
     <h2 data-lang="en">Why Choose Viral Coin?</h2>
