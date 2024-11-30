@@ -3,29 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viral Coin - Multilingual</title>
+    <meta name="description" content="Viral Coin: A community-driven meme coin built on the Solana blockchain. Join the movement and buy Viral Coin today!">
+    <meta name="keywords" content="Viral Coin, meme coin, cryptocurrency, Solana, blockchain, meme cryptocurrency, buy viral coin, viral coin crypto, community coin">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Viral Coin - Meme Coin on Solana">
+    <meta property="og:description" content="Viral Coin is a meme cryptocurrency built on the Solana blockchain. Join our community and help spread the meme coin revolution.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://viralcoinonsol.github.io/Viralcoin-web/">
+    <title>Viral Coin - Meme Coin on Solana</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0b3d0b;
+            font-family: 'Arial', sans-serif;
+            background-color: #0b3d0b; /* Verde oscuro del logo */
             color: #ffffff;
             margin: 0;
             padding: 0;
         }
-        header, section, footer {
+        header {
             text-align: center;
+            padding: 30px 20px;
+            background-color: #002a00;
+        }
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #00ff00;
+            margin: 10px 0;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #a8ffa8;
+        }
+        section {
             padding: 20px;
+            text-align: center;
+            background-color: #004d00;
+            margin: 15px;
+            border-radius: 10px;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #00ff00;
         }
         .btn {
-            padding: 10px 20px;
+            display: inline-block;
             margin: 10px;
+            padding: 15px 30px;
             background-color: #00ff00;
             color: #004d00;
+            font-size: 1.2em;
+            font-weight: bold;
             text-decoration: none;
             border-radius: 5px;
+            transition: transform 0.2s, background-color 0.3s;
         }
         .btn:hover {
+            transform: scale(1.1);
             background-color: #00cc00;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002a00;
+            color: #888;
+        }
+        .cta-buy {
+            background-color: #ff0000; /* Rojo para llamar la atención */
+            color: #ffffff;
+        }
+        .cta-buy:hover {
+            background-color: #cc0000;
+        }
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .info-card {
+            background-color: #003300;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            color: #ffffff;
+        }
+        .info-card h3 {
+            font-size: 1.5em;
+            color: #00ff00;
+        }
+        .info-card p {
+            font-size: 1em;
+            color: #a8ffa8;
+        }
+        .lang-switch {
+            margin: 20px 0;
         }
     </style>
     <script>
@@ -33,9 +109,9 @@
             const elements = document.querySelectorAll('[data-lang]');
             elements.forEach(el => {
                 if (el.dataset.lang === lang) {
-                    el.style.display = "block";
+                    el.style.display = 'block';
                 } else {
-                    el.style.display = "none";
+                    el.style.display = 'none';
                 }
             });
         }
@@ -44,33 +120,57 @@
 <body onload="changeLanguage('en')">
 
 <header>
-    <h1 data-lang="en">Viral Coin - The Meme Coin Revolution</h1>
-    <h1 data-lang="es" style="display:none;">Viral Coin - La Revolución de las Meme Coins</h1>
-    <p data-lang="en">A community-driven meme coin built on Solana.</p>
-    <p data-lang="es" style="display:none;">Una meme coin impulsada por la comunidad y basada en Solana.</p>
+    <img src="logo.jpg" alt="Viral Coin Logo">
+    <h1 data-lang="en">Viral Coin</h1>
+    <h1 data-lang="es" style="display: none;">Viral Coin</h1>
+    <p data-lang="en">The Meme Coin Revolution on Solana</p>
+    <p data-lang="es" style="display: none;">La revolución de las Meme Coins en Solana</p>
+    <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn cta-buy" data-lang="en">Buy Viral Coin Now!</a>
+    <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn cta-buy" data-lang="es" style="display: none;">¡Compra Viral Coin Ahora!</a>
+</header>
+
+<div class="lang-switch">
     <button class="btn" onclick="changeLanguage('en')">English</button>
     <button class="btn" onclick="changeLanguage('es')">Español</button>
-</header>
+</div>
 
 <section>
     <h2 data-lang="en">Why Choose Viral Coin?</h2>
-    <h2 data-lang="es" style="display:none;">¿Por qué Elegir Viral Coin?</h2>
-    <p data-lang="en">Community-driven, fast, and scalable on Solana.</p>
-    <p data-lang="es" style="display:none;">Impulsada por la comunidad, rápida y escalable en Solana.</p>
+    <h2 data-lang="es" style="display: none;">¿Por qué Elegir Viral Coin?</h2>
+    <div class="info-section">
+        <div class="info-card">
+            <h3 data-lang="en">Community Driven</h3>
+            <h3 data-lang="es" style="display: none;">Impulsada por la Comunidad</h3>
+            <p data-lang="en">We value our community and reward meme creators who promote Viral Coin.</p>
+            <p data-lang="es" style="display: none;">Valoramos a nuestra comunidad y recompensamos a los creadores de memes que promueven Viral Coin.</p>
+        </div>
+        <div class="info-card">
+            <h3 data-lang="en">Built on Solana</h3>
+            <h3 data-lang="es" style="display: none;">Construida en Solana</h3>
+            <p data-lang="en">Fast, scalable, and low fees make Viral Coin the best choice for meme enthusiasts.</p>
+            <p data-lang="es" style="display: none;">Rápida, escalable y con bajas tarifas, Viral Coin es la mejor opción para los entusiastas de los memes.</p>
+        </div>
+        <div class="info-card">
+            <h3 data-lang="en">Future-Proof</h3>
+            <h3 data-lang="es" style="display: none;">Preparada para el Futuro</h3>
+            <p data-lang="en">Our roadmap includes exciting features to keep Viral Coin growing in value.</p>
+            <p data-lang="es" style="display: none;">Nuestra hoja de ruta incluye características emocionantes para que Viral Coin siga creciendo en valor.</p>
+        </div>
+    </div>
 </section>
 
 <section>
     <h2 data-lang="en">Join Us</h2>
-    <h2 data-lang="es" style="display:none;">Únete a Nosotros</h2>
-    <a href="https://x.com/Viralcoinonsol" class="btn" data-lang="en">Follow Us on X</a>
-    <a href="https://x.com/Viralcoinonsol" class="btn" data-lang="es" style="display:none;">Síguenos en X</a>
+    <h2 data-lang="es" style="display: none;">Únete a Nosotros</h2>
+    <a href="https://x.com/Viralcoinonsol?t=swiPSoNCnj0tExOBmCVITw&s=09" class="btn" data-lang="en">Follow Us on X</a>
+    <a href="https://x.com/Viralcoinonsol?t=swiPSoNCnj0tExOBmCVITw&s=09" class="btn" data-lang="es" style="display: none;">Síguenos en X</a>
     <a href="https://t.me/Viralcoinonsolana" class="btn" data-lang="en">Join Telegram</a>
-    <a href="https://t.me/Viralcoinonsolana" class="btn" data-lang="es" style="display:none;">Únete a Telegram</a>
+    <a href="https://t.me/Viralcoinonsolana" class="btn" data-lang="es" style="display: none;">Únete a Telegram</a>
 </section>
 
 <footer>
     <p data-lang="en">&copy; 2024 Viral Coin. All rights reserved.</p>
-    <p data-lang="es" style="display:none;">&copy; 2024 Viral Coin. Todos los derechos reservados.</p>
+    <p data-lang="es" style="display: none;">&copy; 2024 Viral Coin. Todos los derechos reservados.</p>
 </footer>
 
 </body>
