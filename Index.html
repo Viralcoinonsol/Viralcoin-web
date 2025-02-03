@@ -6,110 +6,112 @@
     <meta name="description" content="ViralcoinPEPU: A community-driven meme coin built on the Pepu Unchained blockchain. Join the movement and buy ViralcoinPEPU today!">
     <meta name="keywords" content="ViralcoinPEPU, meme coin, cryptocurrency, Pepu Unchained, blockchain, meme cryptocurrency, buy ViralcoinPEPU, viralcoin crypto, community coin">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph Meta Tags -->
+
     <meta property="og:title" content="ViralcoinPEPU - Meme Coin on Pepu Unchained">
     <meta property="og:description" content="ViralcoinPEPU is a meme cryptocurrency built on the Pepu Unchained blockchain. Join our community and help spread the meme coin revolution.">
-    <meta property="og:image" content="logo.jpg"> <!-- Asegúrate de que esta imagen está en la raíz del repositorio -->
+    <meta property="og:image" content="logo.jpg">
     <meta property="og:url" content="https://viralcoinonsol.github.io/Viralcoin-web/">
-    
+
     <title>ViralcoinPEPU - Meme Coin on Pepu Unchained</title>
 
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #0b3d0b; /* Verde intenso */
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            padding: 30px 20px;
-            background-color: #002a00;
-        }
-        header img {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-        header h1 {
-            font-size: 3em;
-            color: #00ff00;
-            margin: 10px 0;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #a8ffa8;
-        }
-        section {
-            padding: 20px;
-            background-color: #004d00;
-            margin: 15px auto;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 800px;
-        }
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            background-color: #00ff00;
-            color: #004d00;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: transform 0.2s, background-color 0.3s;
-        }
-        .btn:hover {
-            transform: scale(1.1);
-            background-color: #00cc00;
-        }
-        footer {
-            padding: 20px;
-            background-color: #002a00;
-            color: #888;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        
+        body { background-color: #0b3d0b; color: #ffffff; text-align: center; }
+        
+        nav { display: flex; justify-content: center; background: #002a00; padding: 15px; position: sticky; top: 0; width: 100%; z-index: 1000; }
+        
+        nav a { color: #ffffff; text-decoration: none; margin: 0 15px; font-size: 1.2em; transition: color 0.3s; }
+        nav a:hover { color: #00ff00; }
+
+        #language-switch { position: absolute; top: 15px; right: 20px; cursor: pointer; font-size: 1em; padding: 5px 10px; border: none; background: #00ff00; color: #004d00; border-radius: 5px; }
+        #language-switch:hover { background: #00cc00; }
+
+        header { padding: 40px 20px; background-color: #004d00; }
+        header img { max-width: 120px; border-radius: 50%; margin-bottom: 10px; }
+        header h1 { font-size: 2.5em; color: #00ff00; }
+        header p { font-size: 1.2em; color: #a8ffa8; }
+
+        .btn { display: inline-block; margin: 15px; padding: 12px 25px; background-color: #00ff00; color: #004d00; font-size: 1.2em; font-weight: bold; text-decoration: none; border-radius: 5px; transition: all 0.3s; }
+        .btn:hover { transform: scale(1.1); background: #00cc00; }
+
+        section { padding: 40px 20px; background-color: #003300; margin: 20px auto; border-radius: 10px; width: 90%; max-width: 800px; }
+
+        .info-card { background: #002a00; padding: 20px; margin: 15px; border-radius: 10px; }
+        .info-card h3 { color: #00ff00; }
+        .info-card p { color: #a8ffa8; }
+
+        footer { padding: 20px; background: #002a00; color: #888; }
     </style>
 </head>
 <body>
 
+<!-- Botón para cambiar idioma -->
+<button id="language-switch">Español</button>
+
+<!-- Navbar -->
+<nav>
+    <a href="#about" data-en="About" data-es="Acerca de">About</a>
+    <a href="#why" data-en="Why Choose Us?" data-es="¿Por qué elegirnos?">Why Choose Us?</a>
+    <a href="#join" data-en="Join Us" data-es="Únete a nosotros">Join Us</a>
+</nav>
+
+<!-- Header -->
 <header>
-    <img src="./logo.jpg" alt="ViralcoinPEPU Logo"> <!-- Verifica que el archivo "logo.jpg" está en la raíz -->
-    <h1>ViralcoinPEPU</h1>
-    <p>The Meme Coin Revolution on Pepu Unchained</p>
-    <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn">Buy ViralcoinPEPU Now!</a>
+    <img src="./logo.jpg" alt="ViralcoinPEPU Logo">
+    <h1 data-en="ViralcoinPEPU" data-es="ViralcoinPEPU">ViralcoinPEPU</h1>
+    <p data-en="The Meme Coin Revolution on Pepu Unchained" data-es="La revolución de las monedas meme en Pepu Unchained">The Meme Coin Revolution on Pepu Unchained</p>
+    <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn" data-en="Buy ViralcoinPEPU Now!" data-es="¡Compra ViralcoinPEPU Ahora!">Buy ViralcoinPEPU Now!</a>
 </header>
 
-<section>
-    <h2>Why Choose ViralcoinPEPU?</h2>
-    <div>
-        <div>
-            <h3>Community Driven</h3>
-            <p>We value our community and reward meme creators who promote ViralcoinPEPU.</p>
-        </div>
-        <div>
-            <h3>Built on Pepu Unchained</h3>
-            <p>Fast, scalable, and low fees make ViralcoinPEPU the best choice for meme enthusiasts.</p>
-        </div>
-        <div>
-            <h3>Future-Proof</h3>
-            <p>Our roadmap includes exciting features to keep ViralcoinPEPU growing in value.</p>
-        </div>
+<!-- About Section -->
+<section id="about">
+    <h2 data-en="About ViralcoinPEPU" data-es="Acerca de ViralcoinPEPU">About ViralcoinPEPU</h2>
+    <p data-en="ViralcoinPEPU is a community-driven meme cryptocurrency built on the Pepu Unchained blockchain." 
+       data-es="ViralcoinPEPU es una criptomoneda meme impulsada por la comunidad y construida en la blockchain de Pepu Unchained.">
+       ViralcoinPEPU is a community-driven meme cryptocurrency built on the Pepu Unchained blockchain.
+    </p>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="why">
+    <h2 data-en="Why Choose ViralcoinPEPU?" data-es="¿Por qué elegir ViralcoinPEPU?">Why Choose ViralcoinPEPU?</h2>
+    <div class="info-card">
+        <h3 data-en="Community Driven" data-es="Impulsada por la Comunidad">Community Driven</h3>
+        <p data-en="We value our community and reward meme creators who promote ViralcoinPEPU." 
+           data-es="Valoramos a nuestra comunidad y recompensamos a los creadores de memes que promocionan ViralcoinPEPU.">
+           We value our community and reward meme creators who promote ViralcoinPEPU.
+        </p>
     </div>
 </section>
 
-<section>
-    <h2>Join Us</h2>
-    <a href="https://x.com/Viralcoinonsol?t=swiPSoNCnj0tExOBmCVITw&s=09" class="btn">Follow Us on X</a>
-    <a href="https://t.me/Viralcoinonsolana" class="btn">Join Telegram</a>
+<!-- Join Us Section -->
+<section id="join">
+    <h2 data-en="Join Us" data-es="Únete a Nosotros">Join Us</h2>
+    <a href="https://x.com/Viralcoinonsol" class="btn" data-en="Follow Us on X" data-es="Síguenos en X">Follow Us on X</a>
+    <a href="https://t.me/Viralcoinonsolana" class="btn" data-en="Join Telegram" data-es="Únete a Telegram">Join Telegram</a>
 </section>
 
+<!-- Footer -->
 <footer>
-    <p>&copy; 2024 ViralcoinPEPU. All rights reserved.</p>
+    <p data-en="&copy; 2024 ViralcoinPEPU. All rights reserved." data-es="&copy; 2024 ViralcoinPEPU. Todos los derechos reservados.">
+        &copy; 2024 ViralcoinPEPU. All rights reserved.
+    </p>
 </footer>
+
+<script>
+    const langBtn = document.getElementById("language-switch");
+    let currentLang = "en";
+
+    langBtn.addEventListener("click", () => {
+        currentLang = currentLang === "en" ? "es" : "en";
+        langBtn.textContent = currentLang === "en" ? "Español" : "English";
+
+        document.querySelectorAll("[data-en]").forEach(el => {
+            el.textContent = el.getAttribute(`data-${currentLang}`);
+        });
+    });
+</script>
 
 </body>
 </html>
