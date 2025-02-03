@@ -7,10 +7,12 @@
     <meta name="keywords" content="ViralcoinPEPU, meme coin, cryptocurrency, Pepu Unchained, blockchain, meme cryptocurrency, buy ViralcoinPEPU, viralcoin crypto, community coin">
     <meta name="robots" content="index, follow">
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="ViralcoinPEPU - Meme Coin on Pepu Unchained">
     <meta property="og:description" content="ViralcoinPEPU is a meme cryptocurrency built on the Pepu Unchained blockchain. Join our community and help spread the meme coin revolution.">
     <meta property="og:image" content="logo.jpg">
     <meta property="og:url" content="https://viralcoinonsol.github.io/Viralcoin-web/">
+
     <title>ViralcoinPEPU - Meme Coin on Pepu Unchained</title>
 
     <style>
@@ -57,7 +59,7 @@
 
 <!-- Header -->
 <header>
-    <img src="./logo.jpg" alt="ViralcoinPEPU Logo">
+    <img src="logo.jpg" alt="ViralcoinPEPU Logo"> <!-- Verifica que el archivo está en la raíz -->
     <h1 data-en="ViralcoinPEPU" data-es="ViralcoinPEPU">ViralcoinPEPU</h1>
     <p data-en="The Meme Coin Revolution on Pepu Unchained" data-es="La revolución de las monedas meme en Pepu Unchained">The Meme Coin Revolution on Pepu Unchained</p>
     <a href="https://pump.fun/coin/78aTsh7BYofk1WQpo74K23bxCUbQV8Cai35tjaykpump" class="btn" data-en="Buy ViralcoinPEPU Now!" data-es="¡Compra ViralcoinPEPU Ahora!">Buy ViralcoinPEPU Now!</a>
@@ -70,18 +72,6 @@
        data-es="ViralcoinPEPU es una criptomoneda meme impulsada por la comunidad y construida en la blockchain de Pepu Unchained.">
        ViralcoinPEPU is a community-driven meme cryptocurrency built on the Pepu Unchained blockchain.
     </p>
-</section>
-
-<!-- Why Choose Us Section -->
-<section id="why">
-    <h2 data-en="Why Choose ViralcoinPEPU?" data-es="¿Por qué elegir ViralcoinPEPU?">Why Choose ViralcoinPEPU?</h2>
-    <div class="info-card">
-        <h3 data-en="Community Driven" data-es="Impulsada por la Comunidad">Community Driven</h3>
-        <p data-en="We value our community and reward meme creators who promote ViralcoinPEPU." 
-           data-es="Valoramos a nuestra comunidad y recompensamos a los creadores de memes que promocionan ViralcoinPEPU.">
-           We value our community and reward meme creators who promote ViralcoinPEPU.
-        </p>
-    </div>
 </section>
 
 <!-- Join Us Section -->
@@ -99,12 +89,10 @@
 </footer>
 
 <script>
-    const langBtn = document.getElementById("language-switch");
-    let currentLang = "en";
-
-    langBtn.addEventListener("click", () => {
-        currentLang = currentLang === "en" ? "es" : "en";
-        langBtn.textContent = currentLang === "en" ? "Español" : "English";
+    document.getElementById("language-switch").addEventListener("click", () => {
+        const currentLang = document.documentElement.lang === "en" ? "es" : "en";
+        document.documentElement.lang = currentLang;
+        document.getElementById("language-switch").textContent = currentLang === "en" ? "Español" : "English";
 
         document.querySelectorAll("[data-en]").forEach(el => {
             el.textContent = el.getAttribute(`data-${currentLang}`);
