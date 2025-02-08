@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPUSD - The Cryptocurrency of PEPU'</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00ff99;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #00cc77;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PEPUSD - The Cryptocurrency of PEPU'</h1>
+    </header>
+    <div class="container">
+        <img src="pepusd-image.jpg" alt="PEPUSD Logo">
+        <p><strong>PEPUSD</strong> is the newest cryptocurrency on the <strong>PEPU'</strong> network, designed to revolutionize finance with decentralized technology.</p>
+        <a href="#" class="button">View on Blockchain</a>
+    </div>
+</body>
+</html>
